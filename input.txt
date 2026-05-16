@@ -1,8 +1,8 @@
-let ventas = [100,200,300];
-let stock = [5,10,15];
+let edades = [18,20,25];
+let puntos = [100,200,300];
 
-console.log(50 + 25);
+console.log(200 % 2);
 
-for(i = 5; i; i = i - 1) {
-    console.log(i * 10);
+for(i = 4; i; i = i - 1) {
+    console.log(i * 2);
 }
