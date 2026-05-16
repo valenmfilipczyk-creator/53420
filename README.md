@@ -44,22 +44,22 @@ analizador/
 ├── input_incorrecto2.txt
 └── README.md
 
-// INSTALACION
+# INSTALACION
 
 Instalar dependencias 
     npm start
 
-// GENERACION DEL PARSER Y LEXER
+# GENERACION DEL PARSER Y LEXER
 
 Ejecutar:
     npm run build
 
-// EJECUCIÓN DEL ANALIZADOR
+# EJECUCIÓN DEL ANALIZADOR
 
 Ejecutar:
     npm start
 
-// ANALISIS LEXICO
+# ANALISIS LEXICO
 
 El sistema reconoce: 
  - identificadores
@@ -71,14 +71,15 @@ El sistema reconoce:
  Además genera una tabla de lexemas y tokens
  ![Tokens](imagenes/tokens.png)
 
- // ANALISIS SINTACTICO
+ 
+ # ANALISIS SINTACTICO
 
  El sistema verifica si el código cumple la gramática efinida en MiniJS.g4.
 
  Ademas construye el árbol sintáctico concreto de la entrada 
  ![Arbol](imagenes/arbol.png)
 
- //INTERPRETACION
+ # INTERPRETACION
 
  El interprete ejecuta instrucciones básicas como:
    - console.log
@@ -88,7 +89,7 @@ El sistema reconoce:
 
 ![Output](imagenes/output.png)
 
-// MANEJO DE ERRORES
+# MANEJO DE ERRORES
 
 El sistema detecta errores sintacticos y muestra: 
   - linea 
@@ -97,7 +98,7 @@ El sistema detecta errores sintacticos y muestra:
 
 ![Error](imagenes/error.png)
 
-// EJEMPLOS INCLUIDOS
+# EJEMPLOS INCLUIDOS
 
 Correctos :
  - input_correccto1.txt
@@ -107,7 +108,7 @@ Incorrectos :
  - input_incorrecto1.txt
  - input_incorrecto2.txt
 
-// AUTOR
+# AUTOR
 
 - Nombre : Valentina Martinez Filipczyk
 - Legajo : 53420
