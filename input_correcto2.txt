@@ -1,0 +1,7 @@
+let datos = [5,10,15];
+
+console.log(1+2);
+
+for(i = 6; i; i = i - 2) {
+    console.log(i + 1);
+}

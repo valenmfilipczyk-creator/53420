@@ -1,0 +1,8 @@
+let ventas = [100,200,300];
+let stock = [5,10,15];
+
+console.log(50 + 25);
+
+for(i = 5; i; i = i - 1) {
+    console.log(i * 10);
+}

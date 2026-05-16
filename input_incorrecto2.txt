@@ -1,0 +1,8 @@
+let datos = [10,20,30];
+let nums = [1,2,3];
+
+console.log(100 + 50)
+
+for(i = 3; i; i = i - 1) {
+    console.log(i + 10);
+}
