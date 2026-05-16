@@ -76,7 +76,7 @@ El sistema reconoce:
  El sistema verifica si el código cumple la gramática efinida en MiniJS.g4.
 
  Ademas construye el árbol sintáctico concreto de la entrada 
- ![arbol](imagenes/arbol.png)
+ ![Arbol](imagenes/arbol.png)
 
  //INTERPRETACION
 
