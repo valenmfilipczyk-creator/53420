@@ -69,14 +69,14 @@ El sistema reconoce:
  - símbolos especiales
 
  Además genera una tabla de lexemas y tokens
- ![Tokens](imagenes-tokens.png)
+ ![Tokens](imagenes/tokens.png)
 
  // ANALISIS SINTACTICO
 
  El sistema verifica si el código cumple la gramática efinida en MiniJS.g4.
 
  Ademas construye el árbol sintáctico concreto de la entrada 
- ![arbol](imagenes-arbol.png)
+ ![arbol](imagenes/arbol.png)
 
  //INTERPRETACION
 
@@ -86,7 +86,7 @@ El sistema reconoce:
    - estructuras for
    - declaración de arreglos 
 
-![Output](imagenes-output.png)
+![Output](imagenes/output.png)
 
 // MANEJO DE ERRORES
 
@@ -95,7 +95,7 @@ El sistema detecta errores sintacticos y muestra:
   - columna
   descripción de error
 
-![Error](imagenes-error.png)
+![Error](imagenes/error.png)
 
 // EJEMPLOS INCLUIDOS
 
