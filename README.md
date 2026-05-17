@@ -1,115 +1,119 @@
-# Analizador MiniJS con ANTLR4
+# Analizador MiniJS
 
 ## Descripción
 
 Este proyecto implementa un analizador léxico, sintáctico e intérprete básico utilizando ANTLR4 y JavaScript.
 
-El sistema procesa una versión reducida del lenguaje JavaScript definida mediante una gramática propia (`MiniJS.g4`).
+El sistema procesa una versión reducida del lenguaje JavaScript definida mediante una gramática propia (MiniJS.g4).
 
-El analizador permite:
+# Autor
 
-- realizar análisis léxico
-- realizar análisis sintáctico
-- generar árbol sintáctico
-- interpretar instrucciones básicas
-- detectar errores sintácticos
-
----
-
-# Tecnologías utilizadas
-
-- JavaScript
-- Node.js
-- ANTLR4
-- Visual Studio Code
-
----
+Nombre : Valentina Martinez Filipczyk
+Legajo : 53420
 
 # Estructura del proyecto
 
-```text
-analizador/
-│
+```txt
+ANALIZADOR/
 ├── generated/
-├── node_modules/
 ├── imagenes/
-├── MiniJS.g4
 ├── index.js
 ├── Interpreter.js
-├── package.json
-├── input.txt
+├── MiniJS.g4
+├── MiniJSLexer.js
+├── MiniJSParser.js
+├── MiniJSVisitor.js
 ├── input_correcto1.txt
 ├── input_correcto2.txt
 ├── input_incorrecto1.txt
 ├── input_incorrecto2.txt
+├── package.json
+├── package-lock.json
 └── README.md
+```
 
 # INSTALACION
 
-Instalar dependencias 
-    npm start
+Instalar dependencias:
+
+```bash
+npm install
+```
 
 # GENERACION DEL PARSER Y LEXER
 
 Ejecutar:
-    npm run build
 
-# EJECUCIÓN DEL ANALIZADOR
+```bash
+npm run build
+```
+
+# EJECUCION DEL ANALIZADOR
 
 Ejecutar:
-    npm start
+
+```bash
+npm start
+```
+
+# EJEMPLOS INCLUIDOS
+
+El proyecto incluye ejemplos de entrada correctos e incorrectos
+
+## Inputs correctos
+
+- input_correcto1.txt
+- input_correcto2.txt
+
+## Inputs incorrectos
+
+- input_incorrecto1.txt
+- input_incorrecto2.txt
+
+
 
 # ANALISIS LEXICO
 
-El sistema reconoce: 
- - identificadores
- - números
- - operadores
- - palabras reservadas
- - símbolos especiales
+El sistema reconoce:
 
- Además genera una tabla de lexemas y tokens
- ![Tokens](imagenes/tokens.png)
+- identificadores
+- números
+- operadores
+- palabras reservadas
+- símbolos especiales
 
- 
- # ANALISIS SINTACTICO
+Además genera una tabla de lexemas y tokens.
 
- El sistema verifica si el código cumple la gramática efinida en MiniJS.g4.
+![Tokens](imagenes/tokens.png)
 
- Ademas construye el árbol sintáctico concreto de la entrada 
- ![Arbol](imagenes/arbol.png)
+# ANALISIS SINTACTICO
 
- # INTERPRETACION
+El sistema verifica si el código cumple la gramática definida en MiniJS.g4.
 
- El interprete ejecuta instrucciones básicas como:
-   - console.log
-   - operaciones matemáticas
-   - estructuras for
-   - declaración de arreglos 
+Además construye el árbol sintáctico concreto de la entrada.
+
+![Arbol](imagenes/arbol.png)
+
+# INTERPRETACION
+
+El intérprete ejecuta instrucciones básicas como:
+
+- console.log
+- operaciones matemáticas
+- estructuras for
+- declaración de arreglos
 
 ![Output](imagenes/output.png)
 
 # MANEJO DE ERRORES
 
-El sistema detecta errores sintacticos y muestra: 
-  - linea 
-  - columna
-  descripción de error
+El sistema detecta errores léxicos y sintácticos mostrando mensajes descriptivos.
 
-![Error](imagenes/error.png)
+![Errores](imagenes/error.png)
 
-# EJEMPLOS INCLUIDOS
+# TECNOLOGIAS UTILIZADAS
 
-Correctos :
- - input_correccto1.txt
- - input_correcto2.txt
-
-Incorrectos :
- - input_incorrecto1.txt
- - input_incorrecto2.txt
-
-# AUTOR
-
-- Nombre : Valentina Martinez Filipczyk
-- Legajo : 53420
-
+- JavaScript
+- Node.js
+- ANTLR4
+- Visual Studio Code
